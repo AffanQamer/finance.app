@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  
+  <script src='./index.js'></script>
+
+  <style>
+    .hide {
+      display: none
+    }
+  </style>
+</head>
+<body>
+  <input id='description' placeholder="Enter income/expense description"/>
+  <input id='amount' placeholder="Enter any amount"/>
+  <button onClick='addTransaction("income")'>Add Income</button>
+  <button onClick='addTransaction("expense")'>Add Expense</button>
+
+  <table id='table' border='1'>
+    <tr>
+      <th>Description</th>
+      <th>Amount</th>
+      <th>Type</th>
+    </tr>
+  </table>
+</body>
+</html>
